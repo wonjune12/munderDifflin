@@ -1,0 +1,61 @@
+body{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    text-align : left;
+    padding : 20px;
+    margin : 30px 0 50px 0px;
+    background-color : #95afc0;
+}
+
+#description{
+    display : flex;
+    justify-content: space-around;
+}
+#munderlogo{
+    width : 250px;
+    height : 120px;
+}
+#description{
+    margin-bottom : 50px;
+}
+#productLine{
+    opacity : 0;
+    display : flex;
+    justify-content: space-around;
+}
+
+#productLine.show{
+    animation : show 600ms forwards;
+}
+
+#productLine.gone{
+    animation : show 600ms forwards;
+}
+
+@keyframes gone{
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes show{
+    from {
+        opacity : 0;
+    }
+    to {
+        opacity : 1;
+    }
+}
+
+#showProduct {
+    width : 200px;
+    height : 100px;
+    background-color : gray;
+    font-size : 1.5em;
+}
