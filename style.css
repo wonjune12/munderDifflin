@@ -32,6 +32,7 @@ a:hover{
 #mainImage{
     width : 600px;
     height : 700px;
+    opacity : 0;
 }
 
 #mainImage.showDes{
@@ -44,13 +45,12 @@ a:hover{
     justify-content: space-around;
     margin : 50px 0 50px 0;
     height : 800px;
-
+    opacity : 0;
 }
-#textBox.showDes{
+
+#description.showDes{
     animation : showDescription 600ms forwards;
 }
-
-
 @keyframes showDescription{
     from {
         opacity : 0;
@@ -64,16 +64,15 @@ a:hover{
 
 
 #slogan{
-    font-size-adjust: none;
+    text-align: left;
     font-family: 'Roboto', sans-serif;
-    font-size : 2em;
+    font-size : 2.5em;
 }
-#textBox{   
+#intro{   
     text-align: left;
     font-family: 'Raleway', sans-serif;
     font-size : 1.5em;
     width : 900px;
-    opacity : 0;
 }
 
 #munderlogo{

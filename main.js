@@ -15,8 +15,9 @@ productLineButton.addEventListener("click",(event)=>{
 
 //to show our information, our motto and descriptions about our company
 displayDescription.addEventListener("click",(event)=>{
-    document.getElementById("textBox").classList.add("showDes");
     document.getElementById("mainImage").classList.add("showDes");
+    document.getElementById("description").classList.add("showDes");
+    document.getElementById("slogan").classList.add("showDes");
 })
 
 
