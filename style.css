@@ -2,7 +2,6 @@
 
 body{
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 header{
@@ -12,27 +11,59 @@ header{
     background-color : #95afc0;
 }
 
+a{
+    padding : 4px 10px 4px 10px;
+    text-decoration-line: none;
+    justify-content: space-around;
+    background-color : #95afc0;
+    font-family: 'Roboto', sans-serif;
+    font-size : 1.6em;
+    font: black;
+
+}
+a:hover{
+    background-color : rgb(236, 122, 122);
+}
+
+#navbar{
+    text-align : right;
+}
+
+#mainImage{
+    width : 600px;
+    height : 700px;
+}
 
 #description{
     display : flex;
     justify-content: space-around;
-    margin-bottom : 50px;
-
+    margin : 50px 0 50px 0;
     height : 800px;
+
+}
+
+@keyframes imageEvent{
+    
+
 }
 
 
-#mainImage{
-    width : 400px;
-    height : 500px;
-}
-#textBox{
+#slogan{
+    font-size-adjust: none;
     font-family: 'Roboto', sans-serif;
     font-size : 2em;
 }
+#textBox{   
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-size : 1.5em;
+    width : 900px;
+    opacity : 0;
+}
+
 #munderlogo{
-    width : 220px;
-    height : 120px;
+    width : 300px;
+    height : 14  0px;
 }
 
 #productLine{
@@ -56,19 +87,20 @@ header{
 }
 
 #item:hover{
-    opacity : .6;
-
+    opacity : .4;
 }
 
-#navbar{
 
-    text-align : right;
-}
 
-#showProduct {
+#showProductButton {
     border : 0px;
     width : 200px;
     height : 100px;
     background-color : #f1f1f1;
     font-size : 1.5em;
+}
+
+#productDetail{
+    width : 300px;
+
 }
