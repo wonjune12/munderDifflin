@@ -22,7 +22,7 @@ a{
 
 }
 a:hover{
-    background-color : rgb(236, 122, 122);
+    background-color : rgb(57, 143, 201);
 }
 
 #navbar{
@@ -34,6 +34,11 @@ a:hover{
     height : 700px;
 }
 
+#mainImage.showDes{
+    animation : showDescription 600ms forwards;
+}
+
+
 #description{
     display : flex;
     justify-content: space-around;
@@ -41,9 +46,19 @@ a:hover{
     height : 800px;
 
 }
+#textBox.showDes{
+    animation : showDescription 600ms forwards;
+}
 
-@keyframes imageEvent{
-    
+
+@keyframes showDescription{
+    from {
+        opacity : 0;
+    }
+    to {
+        opacity : 1;
+    }
+
 
 }
 
