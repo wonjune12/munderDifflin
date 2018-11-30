@@ -1,6 +1,6 @@
 'use strict';
 
-let displayDescription = document.querySelector("#description");
+let displayDescription = document.querySelector("#mainImage");
 let productLineButton = document.querySelector("#showProductButton");
 let hoverEvent = document.querySelectorAll("#item");
 let openShoppingCart = document.getElementById("cart");
@@ -15,8 +15,11 @@ productLineButton.addEventListener("click",(event)=>{
 
 //to show our information, our motto and descriptions about our company
 displayDescription.addEventListener("click",(event)=>{
-    document.getElementById("description").classList.add("displayDescription");
+    document.getElementById("mainImage").classList.add("showDes");
+    document.getElementById("description").classList.add("showDes");
+    document.getElementById("slogan").classList.add("showDes");
 })
+
 
 
 //to add selected items into the shopping cart and adding the items into the shopping cart
@@ -26,8 +29,8 @@ for (let i = 0; i < hoverEvent.length; i++){
         alert ("you have added this item into your shopping cart!");
         shoppingCart++;
     })
+    
 }
-
 //display how many items are in the shopping cart using alert box.
 openShoppingCart.addEventListener("click",(event)=>{
     if (shoppingCart == 0){
