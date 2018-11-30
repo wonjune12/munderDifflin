@@ -1,6 +1,6 @@
 'use strict';
 
-let displayDescription = document.querySelector("#mainImage");
+let displayDescription = document.querySelector("#description");
 let productLineButton = document.querySelector("#showProductButton");
 let hoverEvent = document.querySelectorAll("#item");
 let openShoppingCart = document.getElementById("cart");
